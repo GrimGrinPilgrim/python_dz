@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{url_for("static", filename="css/style1.css")}}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+  <title>all</title>
+</head>
+<body>
+  <a href="/">смотреть списком</a>
+  <div class="center">
+    <h1>пирожки</h1>
+  </div>
+  <ul >
+    {% for pirozok in pirozki %}
+    <li class="full_list">
+      <a href="{{url_for('result', word=pirozok)}}">{{pirozok}}
+        <img src="{{url_for("static", filename="img/"+pir[pirozki.index(pirozok)].strip()+".png") }} ">
+      </a>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+  background-color:rgb(random(200),random(200),random(200));
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+}
+h1{
+  font-size: 60px;
+  color: orange;
+  
+  
+}
+img{
+  width: 50%;
+}
+li{
+  list-style: none;
+  // text-align: left;
+  margin-top: 5px;
+}
+li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  border-bottom: dotted 1px orange;
+
+}
+label{
+  color: #2B2C25;
+}
+.submit{
+  margin-top: 20px;
+  border: none;
+  padding: 10px;
+  background-color: rgba(255,127,0,0.8);
+}
+

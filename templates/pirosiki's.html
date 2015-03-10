@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{url_for("static", filename="css/style1.css")}}">
+  <link rel="shortcut icon" href="{{ url_for("static", filename="img/favicon.ico") }}">
+  <title>{{pirozok}}</title>
+</head>
+<body>
+  <div class="center">
+    <h1>{{pirozok}}</h1>
+    <div class="cur_pir"></div>
+    <img src="{{ url_for("static", filename=pirozokimg) }} ">
+  </div>
+</body>
+</html>
